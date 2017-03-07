@@ -35,8 +35,10 @@ var animatePoints = function() {
 //         points[2].style.WebkitTransform = "scaleX(1) translateY(0)";
 //     };
      //Not sure if this is the best place for the loop.  Should I put it inside the function
-     for(var i=0;i<=2;i++)
-     revealPoint(i);
+     for(var i=0;i<points.length;i++){
+          revealPoint(i);
+     }
+    
     
 //     revealFirstPoint();
 //     revealSecondPoint();
