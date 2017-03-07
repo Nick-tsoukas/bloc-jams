@@ -36,10 +36,11 @@ body.landing {
  .point {
     
      position: relative;
-   
+ 
      padding: 2rem;
      text-align: center;
      opacity: 0;
+    transition-property: background-color, color;
      -webkit-transform: scaleX(0.9) translateY(3rem);
      -moz-transform: scaleX(0.9) translateY(3rem);
      transform: scaleX(0.9) translateY(3rem);
@@ -48,9 +49,17 @@ body.landing {
      transition: all 0.25s ease-in-out;
      -webkit-transition-delay: 0.2s;
      -moz-transition-delay: 0.2s;
-     transition-delay: 2.2s;
+     transition-delay: .2s;
  }
 
+.point:hover {
+    transition-property: background-color, color;
+    transition-duration:1s;
+    background-color:black;
+    color:white;
+    
+    
+}
  
  .point .point-title {
      font-size: 1.25rem;
