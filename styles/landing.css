@@ -40,7 +40,7 @@ body.landing {
      padding: 2rem;
      text-align: center;
      opacity: 0;
-    transition-property: background-color, color;
+    
      -webkit-transform: scaleX(0.9) translateY(3rem);
      -moz-transform: scaleX(0.9) translateY(3rem);
      transform: scaleX(0.9) translateY(3rem);
@@ -53,7 +53,7 @@ body.landing {
  }
 
 .point:hover {
-    transition-property: background-color, color;
+    
     transition-duration:1s;
     background-color:black;
     color:white;
