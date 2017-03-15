@@ -2,7 +2,7 @@ var animatePoints = function() {
  
     
     
-
+/* reveal the  points on landing page */
   var revealPoint = function() {
       $(this).css({
           opacity:1,
@@ -10,12 +10,13 @@ var animatePoints = function() {
       });
       
   };
-    
+    /* make each point a j query object */
   $.each( $('.point'), revealPoint );
     
   };
 
- 
+ /* run function when page loads */
+/* if screen height is greater than 950px show points on landing page */
 $(window).load(function() {
     if ( $(window).height() > 950) {
       animatePoints();
