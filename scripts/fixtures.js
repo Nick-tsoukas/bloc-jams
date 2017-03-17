@@ -5,11 +5,11 @@
     year: '1881',
     albumArtUrl: 'assets/images/album_covers/01.png',
     songs: [
-        { name: 'Blue', duration: '4:26' },
-        { name: 'Green', duration: '3:14' },
-        { name: 'Red', duration: '5:01' },
-        { name: 'Pink', duration: '3:21' },
-        { name: 'Magenta', duration: '2:15' }
+        { name: 'Blue', duration: '4:26', audioUrl: 'assets/music/blue' },
+         { name: 'Green', duration: '3:14', audioUrl: 'assets/music/green' },
+         { name: 'Red', duration: '5:01', audioUrl: 'assets/music/red' },
+         { name: 'Pink', duration: '3:21', audioUrl: 'assets/music/pink' },
+         { name: 'Magenta', duration: '2:15', audioUrl: 'assets/music/magenta' }
     ]
 };
 
