@@ -161,10 +161,24 @@ var updateSeekBarWhileSongPlays = function () {
             var $seekBar = $('.seek-control .seek-bar');
 
             updateSeekPercentage($seekBar, seekBarFillRatio);
+            setCurrentTimeInPlayerbar();
+            setTotalTimeInPlayerBar();
         });
     }
 };
 
+
+var setTotalTimeInPlayerBar = function() {
+    var totalTime = buzz.toTimer(currentSoundFile.getDuration());
+    $('.total-time').html(totalTime);
+    
+}
+var setCurrentTimeInPlayerbar = function (){
+   
+   var currentTime = buzz.toTimer(currentSoundFile.getTime());
+    $('.current-time').html(currentTime); 
+   
+};
 
 //updates the seek bars 
 var updateSeekPercentage = function ($seekBar, seekBarFillRatio) {
@@ -284,6 +298,8 @@ var previousSong = function () {
     $lastSongNumberCell.html(lastSongNumber);
 
 };
+
+
 
 
 var updatePlayerBarSong = function () {
